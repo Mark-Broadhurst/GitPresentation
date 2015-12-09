@@ -10,7 +10,7 @@
 
 ### Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 Git is easy to learn and has a tiny footprint with lightning fast performance.
 
 ***
@@ -22,7 +22,7 @@ So why Git when we have SVN
 ![Git Logo](images/Git-icon-2.png)
 ![SVN Logo](images/svn-logo.png)
 
-' Git is decentralised so works when disconnected 
+' Git is decentralised so works when disconnected
 ' Git allows a number of developers to work together and merge changes without branching
 ' Git has GitHub which shows more information about work completed and provides additional features
 
@@ -31,10 +31,10 @@ So why Git when we have SVN
 ### Creating a Git Repositry
 
     git init
-    
+
 ' Creates a new empty git repository
 ' Does not add existing files from the directory
- 
+
 ***
 
 ### Importing a git Repositry
@@ -44,27 +44,30 @@ So why Git when we have SVN
 
 ' Gets the source code from a remote
 ' Sets up the clone source as a remote
-' Copies a git database locally 
+' Copies a git database locally
 
 ***
-    
+
 ### Staging changes
 
     git add <filename or path>
     git add .
     git rm <filename or path>
     git mv <filename or path> <filename or path>
-    
-' Stages files but does not commit the files 
+
+' Stages files but does not commit the files
 ' Allows you to review your changes before commiting them     
-    
+
 ***
 
 ### Viewing changes
 
     git diff
     git status
-    
+
+' Git diff shows changes in files
+' Git status shows a list of modified files
+
 ***
 
 ### Viewing History
@@ -72,6 +75,8 @@ So why Git when we have SVN
     git log
     git log --oneline --decorate --graph
 
+' Git Log shows history of commits in a list
+' formatting options and how to show a decent list
 ***
 
 ### Unstaging changes
@@ -86,26 +91,32 @@ So why Git when we have SVN
 
     git commit
     git c
-    
+    git c -am "Message"
 ***    
 
 ### Creating Branches
 
     git branch
-    
+    git branch <name>
+    git branch -d <name>
+    git branch -D <name>
+
 ***
 
 ### Changing branches
 
-    git checkout
+    git checkout <branch name>
+    git checkout <filename>
+    git checkout <sha1>
     git co
-    
+
 ***
 
 ### Creating a tag
 
     git tag
-    
+    git tag <name>
+
 ***
 
 ### Adding a remote
@@ -114,17 +125,18 @@ So why Git when we have SVN
     git remote
     git remote show
     git remote prune
-    
+
 ***
 
 ### Getting changes from a remote
 
     git fetch
-    
+    git fetch --tags
+
 ***
 
 ### Applying changes from a remote
-    
+
     git pull
 
 ***
@@ -132,26 +144,28 @@ So why Git when we have SVN
 ### Sending changes to a remote
 
     git push
-    
+    git push -u origin master
+
 ***
 
 ### Merging changes
 
     git merge
     git mergetool
-    
+
 ***
 
 ### Cleaner merging
 
     git rebase
-    
+    git rebase -i HEAD~4
+
 ***
 
 ### ThatOhShitMoment
 
     git reflog
-    
+
 ***
 
 ### Git Config
@@ -159,12 +173,12 @@ So why Git when we have SVN
     git config
     git config --global
     git config --system
-    
+
     git config --global user.name "John Doe"
     git config --global user.email johndoe@example.com
-    
+
 ### Example of git config
-    
+
     git config --global help.autocorrect 1
     git config --global color.ui true
     git config --global core.autocrlf true
@@ -185,7 +199,7 @@ Its a thing?
 
 ***
 
-### Git files
+### Git files folders
 
 .gitignore
 
@@ -200,9 +214,10 @@ Its a thing?
 ### Related tools
 
 Atlassian Source Tree
-![Source Tree]()
+![Source Tree](images/sourcetree-logo.png)
 
 GitHub Desktop
+![GitHub Desktop](images/GitHub-Mark.png)
 
 Axosoft Git Kraken
-![Git Kr]
+![Git Kraken](images/git_kraken.png)
